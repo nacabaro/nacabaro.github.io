@@ -56,18 +56,18 @@ class DM20 {
 
     genRandomCodeSingle() {
         // I want the tamer name to always be NACA as an honor to myself
-        let name1 = "010E";
-        let name2 = "0103";
+        let name1 = "0000000100001110";
+        let name2 = "0000000100000011";
 
         let order = "0";
-        let attack = 10 + Math.floor(Math.random() * 6).toString(2).padStart(5, "0");
+        let attack = (10 + Math.floor(Math.random() * 6)).toString(2).padStart(5, "0");
         let operation = "0".padStart(2, "0");
         let version = "0".padStart(4, "0");  // This is equivalent to Taichi's Agumon
-        let indexL = "0".padStart(8, "0");
+        let indexL = "101".padStart(8, "0");
         let attributeL = Math.floor(Math.random() * 4).toString(2).padStart(2, "0");
         let shot_sL = "0".padStart(6, "0");
         let shot_wL = "0".padStart(6, "0");
-        let powerL = 20 + Math.floor(Math.random() * 200).toString(2).padStart(8, "0");
+        let powerL = (20 + Math.floor(Math.random() * 210)).toString(2).padStart(8, "0");
         let indexR = "0".padStart(8, "0");
         let attributeR = "0".padStart(2, "0");
         let shot_sR = "0".padStart(6, "0");
@@ -92,28 +92,30 @@ class DM20 {
         let packetsHex = createHexArray(packets);
         packetsHex[9] = "@0^F^FE";
 
+        console.log(this.head + packetsHex.join("-"))
+
         return this.head + packetsHex.join("-");
     }
 
     genRandomCodeTag() {
         // I want the tamer name to always be NACA as an honor to myself
-        let name1 = "010E";
-        let name2 = "0103";
+        let name1 = "0000000100001110";
+        let name2 = "0000000100000011";
 
         let order = "0";
-        let attack = 10 + Math.floor(Math.random() * 6).toString(2).padStart(5, "0");
+        let attack = Math.floor(10 + Math.random() * 6).toString(2).padStart(5, "0");
         let operation = "10".padStart(2, "0");
         let version = "0".padStart(4, "0");  // This is equivalent to Taichi's Agumon
         let indexL = "0".padStart(8, "0");
         let attributeL = Math.floor(Math.random() * 4).toString(2).padStart(2, "0");
         let shot_sL = "0".padStart(6, "0");
         let shot_wL = "0".padStart(6, "0");
-        let powerL = 20 + Math.floor(Math.random() * 200).toString(2).padStart(8, "0");
+        let powerL = Math.floor(20 + Math.random() * 210).toString(2).padStart(8, "0");
         let indexR = "0".padStart(8, "0");
         let attributeR = Math.floor(Math.random() * 4).toString(2).padStart(2, "0");
         let shot_sR = "0".padStart(6, "0");
         let shot_wR = "0".padStart(6, "0");
-        let powerR = 20 + Math.floor(Math.random() * 200).toString(2).padStart(8, "0");
+        let powerR = Math.floor(20 + Math.random() * 210).toString(2).padStart(8, "0");
         let tagMeter = Math.floor(Math.random() * 4).toString(2).padStart(4, "0");
         let hits = Math.floor(Math.random() * 16).toString(2).padStart(4, "0");
         let dodges = Math.floor(Math.random() * 16).toString(2).padStart(4, "0");
