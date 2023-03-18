@@ -1,0 +1,18 @@
+.adbar {
+    text-align: center;
+    background-color: #fff064;
+    color: #151515;
+    font-family: DidactGothic;
+    font-weight: bold;
+    padding: 1vh;
+}
+
+.adbar-urgent {
+    text-align: center;
+    display: none;
+    background-color: #ff6464;
+    color: #151515;
+    font-family: DidactGothic;
+    font-weight: bold;
+    padding: 1vh;
+}

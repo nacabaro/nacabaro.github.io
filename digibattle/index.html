@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/hotbar.css">
+        <link rel="stylesheet" href="../css/big-text.css">
+        <link rel="stylesheet" href="../css/horizontal-protector.css">
+        <link rel="stylesheet" href="../css/img-deck.css">
+        <link rel="stylesheet" href="../css/announcement.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Digimon Fighting</title>
+    </head>
+    <body>
+        <div id="hotbar">
+            <div class="hotbar-element">
+                <a href="../digibattle/index.html" class="fancy-link">V-Pet battle</a>
+            </div>
+            <div class="hotbar-element">
+                <a href="../projects/index.html" class="fancy-link">Check out my projects</a>
+            </div>
+            <div class="hotbar-element">
+                <a href="../about-me/index.html" class="fancy-link">Who am I?</a>
+            </div>
+            <div class="hotbar-element">
+                <a href="../server-at-home/index.html" class="fancy-link">Server at home</a>
+            </div>
+        </div>
+
+        <div class="adbar">
+            As of now, only DMX battles are working. Sorry for any inconvenience!
+        </div>
+
+        <div id="adbar-urgent" class="adbar-urgent">
+        </div>
+
+        <div class="horiz-protector" style="background-color: rgba(17, 191, 61, 0.6);">
+            <div class="big-text">
+                <h1 class="big-text-align">Digibattle!!</h1>
+                <p class="big-text-align">Welcome to DigiBattle, a proof of concept that generates a random Digimon you can battle on your Digimon V-Pet by making use of an ACom/DCom device.</p>
+                <p class="big-text-align">Note: This website only works on Google Chrome and Chromium derivates, as the JavaScript Serial API is still in beta and has not been released to Firefox. Sorry for the inconvenience!</p>
+                <p class="big-text-align">To get started, connect your ACom/DCom to your computer, and click on the ATTACH A-COM icon!, then select your A-Com from the list of serial devices and everything should be ready.</p>
+            </div>
+        </div>
+
+        <div class="horiz-protector" style="background-color: rgba(17, 191, 61, 0.34);">
+            <div class="big-text">
+                <div id="digiwindow" class="digiwindow">
+                    <img src="img/attach-serial.png" id="digiwindow-image" class="digiwindow-image">
+                </div>
+            </div>
+        </div> 
+
+        <div class="horiz-protector" style="background-color: rgba(17,191,61, 0.34);">
+            <div id="digiwindow-panel" class="five-image-deck" style="max-width:1000px">
+                <div class="image-deck-element">
+                    <button id="dmog-button" class="digiwindow-selector" disabled>DMOG</button>
+                </div>
+                <div class="image-deck-element">
+                    <button id="dm20-button" class="digiwindow-selector" disabled>DM20 SINGLE</button>
+                </div>
+                <div class="image-deck-element">
+                    <button id="dm20-button" class="digiwindow-selector" disabled>DM20 TAG</button>
+                </div>
+                <div class="image-deck-element">
+                    <button id="dmx-button" class="digiwindow-selector" disabled>DMX</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="horiz-protector" style="background-color: rgba(17,191,61, 0.34);">
+            <div id="digiwindow-panel" class="five-image-deck" style="max-width:700px; justify-content: center; padding-top:0">
+                <div class="image-deck-element">
+                    <button id="battle" class="digiwindow-selector" disabled>BATTLE!!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="big-text">
+            <p class="big-text-align">This website was designed by nacabaro. Copyright nacabaro 2023 all rights reserved.</p>
+        </div>
+
+        <script type="text/javascript" src="js/ui.js"></script>
+        <script type="text/javascript" src="js/generator.js"></script>
+        <script type="text/javascript" src="js/communicator.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.digiwindow {
+    display: hidden;
+    width: 40vb; 
+    height: 20vb; 
+    background-color: white;
+    margin-top: 4vb;
+}
+
+.digiwindow-image {
+    width: 100%;
+    image-rendering: pixelated;
+}   
+
+.digiwindow-selector {
+    height: 10vb;
+    max-height: 100px;
+    max-width: 200px;
+    width: 30vb;
+    font-family: DidactGothic;
+    font-weight: bold;
+    background-color: rgba(80, 204, 61, 0.6);
+    border: 0;
+    font-size: 20px;
+}

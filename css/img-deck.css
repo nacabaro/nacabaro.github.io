@@ -1,0 +1,93 @@
+.five-image-deck {
+    display: flex;
+    padding: 6vb;
+    padding-left: 10vb;
+    padding-right: 10vb;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+    max-height: 600px;
+}
+
+.image-deck-element {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+
+.image-deck-element-no-shadow {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.image-deck-element-description {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+    position: relative;
+    max-height: 300px;
+    max-height: 100vw;
+    max-width: 500px;
+}
+
+.text {
+    display: hidden;
+    position: absolute;
+}
+
+.image-deck-element-footer {
+    position: absolute; 
+    padding-top: 2vb;
+    background-color:rgba(0, 0, 0, 0.56);
+    width: 100%;
+    max-width: 500px;
+    height: 12vh;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.image-deck-element-footer-text {
+    margin: 0;
+    padding-left: 3vb;
+    padding-right: 3vb;
+}
+
+.image-deck-element-image-with-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.26);
+    overflow: hidden;
+}
+
+#links-section {
+    width: 30vb;
+    max-width: 200px;
+    height: 35vb;
+    max-height: 250px;
+}
+
+#three-image-deck {
+    width: 25vw;
+    height: 40vh; 
+    max-width: 360px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+#seven-image-deck {
+    width: 20vb;
+    height: 20vb; 
+    flex-direction: column;
+}

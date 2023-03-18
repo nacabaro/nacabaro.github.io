@@ -1,0 +1,39 @@
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 4vb;
+}
+
+.progress-bar-container {
+    width: 36vw;
+    height: 6vh;
+    min-height: 40px;
+    background-color: #363636;
+    border-radius: 25px;
+}
+
+.progress-bar-content {
+    height: 6vb;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.16);
+    background-color: #828282;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 25px;
+}
+
+.progress-bar-text {
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+    color: black;
+    font-family: DidactGothic;
+    font-weight: bold;
+}
+
+.progress-bar-label {
+    padding-right: 0vw;
+    padding-left: 2vw;
+    width: 7vw;
+    text-align: left;
+}

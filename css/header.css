@@ -1,0 +1,22 @@
+#header {
+    padding: 4vb;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    max-width: 1400px;
+}
+
+.header-element {
+    justify-content: center;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#separator {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}

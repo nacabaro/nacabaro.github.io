@@ -1,0 +1,13 @@
+.big-text {
+    padding: 2vb;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.big-text-align {
+    text-align: center;
+}
+
+.big-text-vertical-spacer {
+    height: 1vb;
+}

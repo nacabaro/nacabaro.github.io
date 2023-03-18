@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: PermanentMarker;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    font-family: DidactGothic;
+}
+
+#profile {
+    margin: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 20vw;
+    border-radius: 10%
+}
+
+#textbox1 {
+    background-color: rgb(63, 22, 22);
+}
+
+#textbox2 {
+    background-color: rgb(207, 127, 127);
+}
