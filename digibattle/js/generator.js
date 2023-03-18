@@ -63,7 +63,7 @@ class DM20 {
         let attack = (10 + Math.floor(Math.random() * 6)).toString(2).padStart(5, "0");
         let operation = "0".padStart(2, "0");
         let version = "0".padStart(4, "0");  // This is equivalent to Taichi's Agumon
-        let indexL = "101".padStart(8, "0");
+        let indexL = "1111".padStart(8, "0");
         let attributeL = Math.floor(Math.random() * 4).toString(2).padStart(2, "0");
         let shot_sL = "0".padStart(6, "0");
         let shot_wL = "0".padStart(6, "0");
