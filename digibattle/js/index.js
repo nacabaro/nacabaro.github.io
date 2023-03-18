@@ -19,7 +19,8 @@ attachSerial.addEventListener("click", () => {
 })
 
 const dmogButton = document.getElementById('dmog-button');
-const dm20Button = document.getElementById('dm20-button');
+const dm20sButton = document.getElementById('dm20s-button');
+const dm20tButton = document.getElementById('dm20t-button');
 const dmxButton = document.getElementById('dmx-button');
 const goButton = document.getElementById('battle');
 
@@ -27,8 +28,18 @@ dmogButton.addEventListener('click', () => {
     digiwindowImage.setAttribute('src', "img/dmog.png");
 });
 
-dm20Button.addEventListener('click', () => {
+dm20sButton.addEventListener('click', () => {
     digiwindowImage.setAttribute('src', "img/dm20.png");
+    let dm20 = new DM20();
+    VPetDevice.setCode(dm20.genRandomCodeSingle());
+    VPetDevice.setDevice("dm20");
+});
+
+dm20tButton.addEventListener('click', () => {
+    digiwindowImage.setAttribute('src', "img/dm20.png");
+    let dm20 = new DM20();
+    VPetDevice.setCode(dm20.genRandomCodeTag());
+    VPetDevice.setDevice("dm20");
 });
 
 dmxButton.addEventListener('click', () => {
@@ -40,8 +51,13 @@ dmxButton.addEventListener('click', () => {
 
 interval = NaN;
 goButton.addEventListener('click', () => {
-    VPetCommunicator.writeData(VPetDevice.getCode());
-    interval = setInterval(swapFrame, 100);
+    if (VPetDevice.getDevice() != NaN) {
+        VPetCommunicator.writeData(VPetDevice.getCode());
+        interval = setInterval(swapFrame, 100);
+    } else {
+        digiwindowImage.setAttribute('src', "img/error.png");
+    }
+
 });
 
 count = 0;
